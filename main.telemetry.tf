@@ -1,3 +1,11 @@
+ "provider": {
+    "azurerm": [
+      {
+        "features": {}
+      }
+    ]
+  }
+
 data "azurerm_client_config" "telemetry" {
   count = var.enable_telemetry ? 1 : 0
 }
